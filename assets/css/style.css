@@ -1,0 +1,75 @@
+.content-card {
+  min-width: 250px;
+  position: relative;
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 25px;
+}
+
+.content-card img {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+article span {
+  display: block;
+  color: white;
+}
+
+.bg-sales {
+  background: linear-gradient(
+    90deg,
+    rgba(254, 189, 154, 1) 0%,
+    rgba(255, 142, 168, 1) 100%
+  );
+}
+.bg-orders {
+  background: linear-gradient(
+    90deg,
+    rgba(139, 201, 245, 1) 0%,
+    rgba(51, 151, 226, 1) 100%
+  );
+}
+.bg-visitors {
+  background: linear-gradient(
+    90deg,
+    rgba(139, 201, 245, 1) 0%,
+    rgba(52, 213, 190, 1) 100%
+  );
+}
+
+.mid-number {
+  font-size: 1.5em;
+  font-weight: 800;
+  margin-top: 25px;
+}
+
+.foot-sale {
+  margin-top: 50px;
+}
+
+.content-card::after {
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+  height: 200px;
+  width: 200px;
+  background: rgb(255, 255, 255, 0.3);
+  right: -100px;
+  top: -50px;
+}
+
+.content-card::before {
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+  height: 200px;
+  width: 200px;
+  background: rgb(255, 255, 255, 0.3);
+  right: -50px;
+  top: 100px;
+}
